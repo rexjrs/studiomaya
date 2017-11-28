@@ -7,7 +7,7 @@ const defaultOGImage = ''
 
 const Head = (props) => (
   <NextHead>
-    <meta charset="UTF-8" />
+    <meta charSet="UTF-8" />
     <title>{props.title || ''}</title>
     <meta name="description" content={props.description || defaultDescription} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,6 +15,7 @@ const Head = (props) => (
     <link rel="apple-touch-icon" href="/static/touch-icon.png" />
     <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
     <link rel="icon" href="/static/favicon.ico" />
+    <link href="/static/mui.min.css" type="text/css" media="screen" rel="stylesheet"/>
     <meta property="og:url" content={props.url || defaultOGURL} />
     <meta property="og:title" content={props.title || ''} />
     <meta property="og:description" content={props.description || defaultDescription} />
